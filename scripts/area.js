@@ -39,7 +39,7 @@ function calculateRectangleArea(){
     rectangleArea.innerText =  area;
 };
 
-
+ 
 
 // reusable function --> reduce duplicate code ;
 function calculateParallelogramArea(){
@@ -63,9 +63,32 @@ function calculateParallelogramArea(){
       rhombusArea.innerText =  area;
    };
 
+
+   // pentagon 
+
+function calculatePentagonArea(){
+    const p = getInputValue('pentagon-p');
+    const b =  getInputValue('pentagon-b');
+    const area  =  .5 * p * b;
+    const pentagonArea =  document.getElementById('pentagon-area');
+    pentagonArea.innerText =  area;
+
+};
+
+//   EllipseArea:
+
+function calculateEllipseArea(){
+        const a  = getInputValue('ellipse-a');
+        const b  = getInputValue('ellipse-b');
+        const area =  Math.PI* a * b;
+        const ellipseArea  = document.getElementById('ellipse-area');
+        ellipseArea.innerText = area;
+};
+
+
 //  common function   get input value field in number 
   function getInputValue(fieldId){
-     const inputField  =    document.getElementById(fieldId);
+     const inputField  =  document.getElementById(fieldId);
      const inputValueText =  inputField.value;
      const value =    parseFloat(inputValueText);
      return value;
