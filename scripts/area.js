@@ -30,7 +30,7 @@ function calculateRectangleArea(){
     const lengthField =  document.getElementById('rectangle-length');
     const lengthTextValue =  lengthField.value;
     const length =  parseFloat(lengthTextValue);
-    
+
     // calculate area 
     const area = width *  length;
     const rectangleArea  =  document.getElementById('rectangle-area');
@@ -39,3 +39,7 @@ function calculateRectangleArea(){
 
 
 
+// reusable function --> reduce duplicate code ;
+function calculateParallelogramArea(){
+    console.log("pa la la la la");
+}
