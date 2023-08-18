@@ -14,6 +14,7 @@ function calculateTriangleArea(){
   
      const area  =  .5 * base * height;
     //    show triangle area
+
     const areaSpan = document.getElementById('triangle-area');
       areaSpan.innerText =  area;
       
@@ -32,6 +33,7 @@ function calculateRectangleArea(){
     const length =  parseFloat(lengthTextValue);
 
     // calculate area 
+
     const area = width *  length;
     const rectangleArea  =  document.getElementById('rectangle-area');
     rectangleArea.innerText =  area;
@@ -44,11 +46,22 @@ function calculateParallelogramArea(){
      const base  =  getInputValue('parallelogram-base');
      const height  =  getInputValue('parallelogram-height');
        const area  =  base *  height;
+
        const parallelogramArea =  document.getElementById('parallelogram-area');
        parallelogramArea.innerText = area;
 
 };
 
+
+// Rhombus  
+
+   function calculateRhombusArea(){
+    const d1  =  getInputValue('rhombus-d1');
+    const d2 =  getInputValue('rhombus-d2');
+    const area  =  .5 * d1 * d2;
+      const rhombusArea =  document.getElementById('rhombus-area');
+      rhombusArea.innerText =  area;
+   };
 
 //  common function   get input value field in number 
   function getInputValue(fieldId){
